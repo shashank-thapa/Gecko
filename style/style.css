@@ -37,7 +37,7 @@ a{
 .nav ul{
     list-style: none;
     display: flex;
-    margin-right: 5%;
+    margin-right: 10%;
 }
 
 .nav li{
@@ -53,27 +53,11 @@ a{
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    background-image: url(../img/herobg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
     text-align: center;
     padding-bottom: 5%;
-}
-
-.heroimg{
-    margin-left:25%;
-    width: 60%;
-    margin-top:15%;
-    white-space: nowrap;
-    vertical-align: middle;
-    text-align: center;
-}
-
-.imgholder{
-    height: 100%;
-    background-image: url(../img/heroimage.svg);
-    background-size: contain;
-    width: 100%;
-    vertical-align: middle;
-    display: inline-block;
-    background-repeat: no-repeat;
 }
 
 .nav a{
@@ -85,46 +69,37 @@ a{
 }
 
 .herobutton{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    column-gap: 1em;
-    row-gap: 2em;
-    float:left;
-    margin-left:6%;
+    display: block;
+    float:center;
 }
 
 .info{
-    text-align: left;
+    text-align: center;
     display: inline-block;
-    width: 90%;
-    margin-top:10%;
+    width: 100%;
+    margin-top: 15%;
 }
 
 .info h1{
-    font-size: 2.5em;
+    font-size: 2em;
     margin:0;
-    color: #394153;
+    color: white;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    padding: 2% 10% 2% 10%;
 }
 
 .info p{
     font-size: 1em;
     margin:0;
-    color: #666666;
+    color: white;
     font-family: "Nunito Sans", sans-serif;
     font-weight: 600;
-    padding: 2% 10% 2% 10%;
-}
-
-.info button{
-    margin-left:10%;
+    padding-top: 2%;
 }
 
 #workbtn{
-    background-color: #0C3D71;
-    color: white;
+    background-color: white;
+    color:#394153;
     border: none;
     width: 250px;
     font-size: 1em;
@@ -132,6 +107,8 @@ a{
     font-family: "Nunito Sans", sans-serif;
     font-weight: bold;
     cursor: pointer;
+    margin-right: 1%;
+    margin-bottom: 3%;
     border-radius: 40px;
 }
 
@@ -142,12 +119,12 @@ a{
 }
 
 #talkbtn{
-    color: #0C3D71;
-    background-color: white;
+    color:white;
+    background-color: rgba(0, 0, 0, 0);
     font-family: "Nunito Sans", sans-serif;
     font-weight: bold;
     font-size: 1em;
-    border: 2px solid #0C3D71;
+    border: 2px solid white;
     width: 250px;
     height: 3.4em;
     border-radius: 40px;
@@ -165,6 +142,7 @@ a{
     text-align: center;
     background-color: #F7FBFE;
     padding: 5%;
+    padding-bottom: 5%;
 }
 
 .services h2{
@@ -195,6 +173,7 @@ a{
     grid-template-columns: repeat(auto-fit, minmax(330px,1fr));
     padding: 2%;
     margin-left:5%;
+    row-gap: 3em;
     text-align: left;
 }
 
@@ -209,8 +188,6 @@ a{
 
 .card1{
     float: left;
-    margin-top: 15%;
-    margin-bottom: 15%;
     width: 85%;
 }
 
@@ -237,24 +214,18 @@ a{
 
 .card4{
     float: left;
-    margin-top: 15%;
-    margin-bottom: 15%;
     width: 85%;
 }
 
 
 .card3{
     float: left;
-    margin-top: 15%;
-    margin-bottom: 15%;
     width: 85%;
 }
 
 
 .card2{
     float: left;
-    margin-top: 15%;
-    margin-bottom: 15%;
     width: 85%;
 }
 
@@ -432,7 +403,7 @@ a{
 }
 
 .connect{
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     text-align: center;
     padding-bottom: 5%;
@@ -463,6 +434,7 @@ a{
     padding: 2% 10% 2% 10%;
 }
 
+
 .connect main{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
@@ -473,16 +445,19 @@ a{
 .connect .card{
     width: 100%;
     background-color: white;
-    height: 400px;
+    height: 350px;
+    text-align: left;
 }
 
 .cardimg1{
     background-image: url(../img/form.svg);
-    background-size: cover;
-    width: 200px;
+    background-size: contain;
+    width: 300px;
     display: inline-block;
     margin-top: 15%;
+    background-repeat: no-repeat;
     height: 150px;
+    margin-left:10%;
 }
 
 .cardimg2{
@@ -492,14 +467,18 @@ a{
     width: 200px;
     display: inline-block;
     margin-top: 15%;
-    height: 150px;
+    background-repeat: no-repeat;
+    height: 169px;
+    margin-left:20%;
 }
 
 .cardimg3{
     width: 100%;
     background-image: url(../img/publish.svg);
     width: 200px;
-    height: 150px;
+    height: 169px;
+    background-repeat: no-repeat;
+    margin-left:15%;
     display: inline-block;
     margin-top: 15%;
     background-size: cover;
@@ -508,6 +487,7 @@ a{
 .card .info{
     width: 80%;
     margin-top:-2%;
+    text-align: left;
     padding:15%;
 }
 
@@ -523,6 +503,10 @@ a{
     font-family: "Montserrat",sans-serif;
     font-weight: bold;
     font-size: .9em;
+    color:#394153;
+}
+
+.card .info a:hover{
     color: turquoise;
 }
 
@@ -646,10 +630,11 @@ footer button:hover{
     }
 }
 
-@media (max-width: 700px){
-    .heroimg{
-        display: none;
+@media (max-width: 900px){
+    .hero .info{
+        padding:15%;
     }
+
 }
 
 @media (min-width: 650px){
