@@ -24,11 +24,11 @@ button{
     width: 100%;
     margin:0;
     display: flex;
+    padding: .5em;
     height: auto;
     top:0;
     justify-content: space-between;
     border-bottom: 3px solid #f4f4f4;
-    padding: 0;
 }
 
 .logo{
@@ -51,7 +51,7 @@ button{
     font-family: "Nunito Sans",sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: .8em;
+    font-size: .85em;
     padding:0 .6em;
 }
 
